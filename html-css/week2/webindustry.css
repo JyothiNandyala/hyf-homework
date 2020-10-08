@@ -1,24 +1,22 @@
 html,body{
-    width:960px;
+    
     margin: 0 auto;
     box-sizing: border-box;
     background-color: white;
 }
-html{
-    background-color: black;
-}
+
 header{
     display:block;
     background-color:#FAFAFB;
    
  font-style:"Georgia",Arial,sans-serif;
  font-size:1.0em;
- width:960px;
+ width:100%;
  height:100px;
  padding-bottom:30px;
 }
 .header-info{
-    margin-left:80px;
+    margin-left:120px;
     padding:5px;
     
     
@@ -27,14 +25,14 @@ header{
     color:lightgray;
 }
 nav{
-    width:960px;
+    width:100%;
     height:40px;
 
 }
 
 nav li{
     display:inline-block;
-    margin-left: 40px;
+    margin-left: 90px;
     
 }
 nav ul {
@@ -45,12 +43,13 @@ nav ul li a{
     text-decoration: none;
 }
 .image{
+    
     margin-bottom: 40px;
 }
 section{
-    margin-left:90px;
-    margin-right:70px;
-    font-size:0.8em;
+    margin-left:125px;
+    margin-right:100px;
+    font-size:1.2em;
 }
 .left-section , .float-left{
     float:left;
@@ -61,7 +60,7 @@ section{
 }
 
 .float-right{
-    margin-left:360px;
+    margin-left:530px;
     
 }
 .logo{
@@ -69,10 +68,11 @@ section{
     margin-top:50px;
     padding-top:30px;
     margin-left:90px;
-    margin-right:70px;
-    font-size:0.8em;
+    margin-right:100px;
+    font-size:1.2em;
    
 }
+
 .container{
     display:flex;
     
@@ -87,7 +87,8 @@ footer{
     background-color: blueviolet;
     color:white;
     
-    
+    width:100%;
+    height:60%;
 }
 .footer-info{
     display:flex;
@@ -97,85 +98,83 @@ footer{
 }
 /*For Mobile Phones*/
 @media screen and (max-width:680px){
-    html,body{
-        margin:10px;
-        padding:2px;
-        height:auto;
-    }
-    html{
-        background: white;
-    }
-    header{
-        width: 40%;
-        height:20%;
-    }
-    .header-info{
-
-        display:block;
-        overflow: hidden;
-        font-size:0.8em;
-        width:100%;
-       margin-left:30px;
-      padding:0;
-}
-    h1{
-        font-size: 15px;
+    header,.header-info{
+        
+        width:100%
+            padding-left:10px;
         
     }
-nav ul li{
-    display:block;
-    text-align:left;
-    padding:2px;
-
-}
-
-.image{
-    margin-top:50px;
-    width:100%;
-    
-    
-}
-    img{
-        width:40%;
-        height:60%;
+    h1{
+        font-size:15px;
     }
-    .left-section,.right-section,.float-left,.float-right,.container{
+    nav ul li{
+        float:left;
+        width:100%;
+        padding-left:20px;
+    }
+    p{
+        margin:0px 10px;
+    }
+    .image{
+        margin-top: 50px;
+        /*padding-left:20px;*/
+        width:100%;
+    }
+    .left-section,.right-section,.float-left,.float-right,.logo,.container{
         float:left;
         width:100%;
         height:auto;
         padding:10px;
-        margin:0;
+        
     }
+    .float-right,.container{
+        float:left;
+        
+        width:50px;
+        height:50px;
+        font-size: 1.0em;
+        line-height: 2.5em;
+        margin-left:5px;
+        
+    }
+.logo{
+        margin-left:50px;
+        padding-left:20px;
+    
+    }
+   /* div.icons img{
+        width:50px;
+        height:50px;
+        margin:15px;
+    }*/
     section{
         display:flex;
         flex-direction: column-reverse;
-       font-size:12px;
-        margin: auto;
-        padding:0;
-        margin-bottom: 10px;
+        font-size:1.0em;
     }
-    
-    .container{
-        width:50%;
-        height:50px;
-        margin:15px;
-    }
-    
-    .logo{
-        
-        margin:0;
-        padding:0;
-    }
-
     footer{
-        margin-top: 900px;
-       
+        margin-top:1050px;
     }
-.footer-info{
-    clear:both;
-    display:block;
-    margin: 0;
-    width:100%;
+    .footer-info{
+        clear: both;
+        display:block;
+        width:100%;
+    }
 }
-   
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
