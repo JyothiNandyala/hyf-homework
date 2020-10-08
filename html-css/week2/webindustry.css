@@ -98,14 +98,17 @@ footer{
 }
 /*For Mobile Phones*/
 @media screen and (max-width:680px){
+    
     header,.header-info{
         
         width:100%
             padding-left:10px;
+        padding-right:10px;
         
     }
     h1{
-        font-size:15px;
+        font-size:20px;
+        font-weight: bold;
     }
     nav ul li{
         float:left;
@@ -117,7 +120,7 @@ footer{
     }
     .image{
         margin-top: 50px;
-        /*padding-left:20px;*/
+        
         width:100%;
     }
     .left-section,.right-section,.float-left,.float-right,.logo,.container{
@@ -133,27 +136,24 @@ footer{
         width:50px;
         height:50px;
         font-size: 1.0em;
-        line-height: 2.5em;
-        margin-left:5px;
+        line-height: 3.5em;
+        margin:0px;
         
     }
 .logo{
-        margin-left:50px;
-        padding-left:20px;
-    
+        margin:0px;
+        
     }
-   /* div.icons img{
-        width:50px;
-        height:50px;
-        margin:15px;
-    }*/
+   
     section{
         display:flex;
         flex-direction: column-reverse;
         font-size:1.0em;
+        
+        margin:0;
     }
     footer{
-        margin-top:1050px;
+        margin-top:1400px;
     }
     .footer-info{
         clear: both;
