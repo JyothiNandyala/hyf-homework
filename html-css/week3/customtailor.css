@@ -119,9 +119,24 @@ height:150px;
     border: 2px solid #ccc;
     
   }
+  a{
+text-decoration: none;
+
+  }
+  .continuebutton{
+      background-color: gainsboro;
+      color:black;
+      padding-top:20px;
+      text-align: center;
+  }
   .button{
+      padding-top:20px;
+      padding-left:5px;
+      text-align: center;
+  }
+  .button , .continuebutton{
       float:right;
-      width:250px;
+      width:200px;
       height:85px;
       margin-right: 40px;
       margin-bottom:100px;
@@ -181,6 +196,7 @@ height:150px;
       p{
         font-size:20px;
       }
+      
       #myprogress {
         width: 90%;
       background-color:white;
@@ -283,15 +299,18 @@ margin-top:20px;
                 border: 2px solid #ccc;
                 
               }
-              .button{
-                float:right;
-                width:150px;
-                height:85px;
+              
+              }
+              .button,.continuebutton{
+                  text-align: center;
+                  display: inline-flex;
+                  justify-content: space-between;
+                  width:120px;
+                  font-size:20px;
+                  height:60px;
+                  margin-top:60px;
+                  padding-left:5px;
                 
-                margin-bottom:70px;
-                font-size: 30px;
-                font-weight: bold;
-                border:2px solid gainsboro;
             }
             
      
