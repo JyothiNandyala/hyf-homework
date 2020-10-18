@@ -1,2 +1,4 @@
 Headings
 Paragraphs
+List
+Footer
