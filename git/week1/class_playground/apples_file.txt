@@ -1,3 +1,5 @@
 Aplle
 banana
 orange
+Kiwi
+pear
