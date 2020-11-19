@@ -18,14 +18,14 @@ function getNote(id) {
     const match = notes.find(note => typeof id === 'number' && note.id === id);
     return match ? match : "ID is not a number and match not found.";
   }
-  const firstNote = getNote(4);
+  const firstNote = getNote(2);
 console.log(firstNote);   
 
 //find the all content text
   function logOutNotesFormatted(id) {
     for(let i=0;i<notes.length;i++){
-        let id =notes[i].id;
-        let content =notes[i].content;
+        const id =notes[i].id;
+        const content =notes[i].content;
         
         console.log("The note with id:" + id + " , has the following note text:" + content);
   }
@@ -39,7 +39,7 @@ function deleteElementFromObject(id){
     
     for(let i=0;i<notes.length;i++){
         if(notes[i].id===id){
-            const deletedElement=notes.splice(i,1);
+            notes.splice(i,1);
             }
 }
 console.log(notes);
