@@ -2,9 +2,9 @@
 
 //adding activities
 const activities =[];
-var today  = new Date();
+const today  = new Date();
 
-var date=today.toLocaleDateString("en-US"); 
+const date=today.toLocaleDateString("en-US"); 
 function addActivity(activity ,duration){
     activities.push({date,activity ,duration});
 }
@@ -18,7 +18,14 @@ console.log(activities);
 //show my status
 let usageAmount=0;
 let usageLimit=60;
-function showStatus(){
+function showStatus(activities){
+
+    if(activities.length === 0){
+        console.log("Add some activities before calling showStatus");
+    }else{
+        
+    }
+
 for(let i=0;i<activities.length;i++){
     usageAmount=usageAmount+activities[i].duration;
 }
@@ -30,14 +37,10 @@ for(let i=0;i<activities.length;i++){
     }
 
 const totalActivities=activities.length;
-console.log("You have added " +totalActivities+ " activities. They amount to " +usageAmount+ " min. of usage");
-}
-if(activities.length === 0||activities.length===null){
-    console.log("Add some activities before calling showStatus");
-}else{
-    showStatus()
+console.log("You have added " +totalActivities+ " activities. The amount to " +usageAmount+ " min. of usage");
 }
 
+showStatus(activities);
 
 //for which activity spending more time.
 
