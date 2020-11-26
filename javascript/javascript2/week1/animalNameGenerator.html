@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpiritAnimalNameGenarator</title>
+</head>
+<body>
+    <form>
+        <label for="name">Name of the user:</label>
+        <input type="text" name="Name" id="txtName" placeholder="Name"><br>
+        
+<input type="button" value="Clickme" id="btnSubmit" onclick="getUserName()">
+    </form>
+    <div>
+    <p id="spiritname">
+
+    </p>
+</div>
+<script>
+    let spritAnimalsString=["The fullmoon wolf","The crying butterfly","wak frog","moving the snake","crying the crow",
+"dancing peacock","The singing parrot","The eating cow","Talking pigeon","The fighting lion"];
+let randomElement ;
+const randomNumber=Math.floor(Math.random(randomElement)*10)+0;
+ randomSpiritAnimalElement=spritAnimalsString[randomNumber];
+
+    function getUserName() {
+        
+        let userName = document.getElementById("txtName").value;
+        if(userName!==""){
+            document.getElementById("spiritname").innerHTML = userName + " -" + randomSpiritAnimalElement;
+           }
+        else{
+            alert("please enter the name")
+        }
+        }
+
+       
+        //const inputElement=document.getElementById("txtName");
+        //inputElement.addEventListener('keydown',ckeckSpiritAnimalName);
+        //inputElement.addEventListener('mouseover',ckeckSpiritAnimalName);
+</script>
+
+</body>
+</html>
