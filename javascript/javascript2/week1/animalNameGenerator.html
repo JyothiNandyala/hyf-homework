@@ -10,7 +10,7 @@
         <label for="name">Name of the user:</label>
         <input type="text" name="Name" id="txtName" placeholder="Name"><br>
         
-<input type="button" value="Clickme" id="btnSubmit" onclick="getUserName()">
+<input type="button" value="Clickme" id="btnSubmit">
     </form>
     <div>
     <p id="spiritname">
@@ -20,12 +20,13 @@
 <script>
     let spritAnimalsString=["The fullmoon wolf","The crying butterfly","wak frog","moving the snake","crying the crow",
 "dancing peacock","The singing parrot","The eating cow","Talking pigeon","The fighting lion"];
-let randomElement ;
-const randomNumber=Math.floor(Math.random(randomElement)*10)+0;
- randomSpiritAnimalElement=spritAnimalsString[randomNumber];
 
-    function getUserName() {
-        
+
+
+function getUserName() {
+    let randomElement ;
+        const randomNumber=Math.floor(Math.random(randomElement)*10)+0;
+ randomSpiritAnimalElement=spritAnimalsString[randomNumber];
         let userName = document.getElementById("txtName").value;
         if(userName!==""){
             document.getElementById("spiritname").innerHTML = userName + " -" + randomSpiritAnimalElement;
@@ -35,10 +36,9 @@ const randomNumber=Math.floor(Math.random(randomElement)*10)+0;
         }
         }
 
-       
-        //const inputElement=document.getElementById("txtName");
-        //inputElement.addEventListener('keydown',ckeckSpiritAnimalName);
-        //inputElement.addEventListener('mouseover',ckeckSpiritAnimalName);
+       const button=document.getElementById("btnSubmit");
+       button.addEventListener('click',getUserName);
+        
 </script>
 
 </body>
