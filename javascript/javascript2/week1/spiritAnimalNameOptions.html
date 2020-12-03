@@ -15,7 +15,7 @@
         <input type="text" id="name"><br><br>
         <br>
 
-        <select id="selectedOptions" name="selectedOptions" onchange="selectOptions()">
+        <select id="selectedOptions" name="selectedOptions">
            
             <option>select the options type</option>
             <option value="clicks">Click the button</option>
@@ -38,12 +38,13 @@ const button = document.getElementById("button");
 
 const result = document.getElementById("result");
 
-const randomSpiritAnimalArray = Math.floor(Math.random() * 10);
+
 
 const h3Element = document.createElement("h3");
 document.body.appendChild(h3Element);
 
 const getUserName = function(){
+    const randomSpiritAnimalArray = Math.floor(Math.random() * 10);
   const userName= document.getElementById("name").value;
   if(userName !== ""){
     h3Element.style.display ="none";
@@ -56,8 +57,9 @@ const getUserName = function(){
 const inputElement = document.getElementById("name");
 const select_option = document.getElementById("selectedOptions");
 
-function selectOptions(){
-    const selectElement = document.getElementById("selectedOptions");
+const selectElement = document.getElementById("selectedOptions");
+
+    select_option.onchange=function(){
 const value = selectElement.options[selectElement.selectedIndex].value;
 if(value === "clicks"){
   button.addEventListener('click', getUserName)
