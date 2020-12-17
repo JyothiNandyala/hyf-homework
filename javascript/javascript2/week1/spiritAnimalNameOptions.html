@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpiritAnimalNameGenarator</title>
+</head>
+
+<body>
+    <form>
+        <label for="spirit">select the when spirit animal should be created.</label>
+        <br><br>
+        <label for="fname">Name Of The user:</label>
+        <input type="text" id="name"><br><br>
+        <br>
+
+        <select id="selectedOptions" name="selectedOptions">
+           
+            <option>select the options type</option>
+            <option value="clicks">Click the button</option>
+            <option value="hovers">Mouse hover over the input field</option>
+            <option value="typing">KeyDown when the user types</option>
+        </select>
+
+        <button type="button" id="button">Click me</button>
+       
+    </form>
+    <br>
+    <p id="result">
+    </p>
+    <script type="text/javascript">
+        
+    let spiritAnimalsString=["The fullmoon wolf","The crying butterfly","wak frog","moving the snake","crying the crow",
+"dancing peacock","The singing parrot","The eating cow","Talking pigeon","The fighting lion"];
+
+const button = document.getElementById("button");
+
+const result = document.getElementById("result");
+
+
+
+const h3Element = document.createElement("h3");
+document.body.appendChild(h3Element);
+
+const getUserName = function(){
+    const randomSpiritAnimalArray = Math.floor(Math.random() * 10);
+  const userName= document.getElementById("name").value;
+  if(userName !== ""){
+    h3Element.style.display ="none";
+    result.innerHTML = userName + " - " + spiritAnimalsString[randomSpiritAnimalArray] ;
+}else{
+    h3Element.innerHTML ="Please enter the name first in input field."
+  }
+}
+
+const inputElement = document.getElementById("name");
+const select_option = document.getElementById("selectedOptions");
+
+const selectElement = document.getElementById("selectedOptions");
+
+    select_option.onchange=function(){
+const value = selectElement.options[selectElement.selectedIndex].value;
+if(value === "clicks"){
+  button.addEventListener('click', getUserName)
+  
+}else  if(value === "hovers"){
+    inputElement.addEventListener('mouseover',getUserName);
+  
+}else if(value === "typing"){
+    inputElement.addEventListener('keydown',getUserName);
+ 
+}
+}
+
+    </script>
+</body>
+
+</html> 
