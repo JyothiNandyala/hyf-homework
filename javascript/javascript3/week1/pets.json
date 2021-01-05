@@ -1,0 +1,27 @@
+[
+    
+    {"pet_name" :"puppy",
+        "pet_age" : 5,
+        "color": "black",
+        "food_items":["chicken","mutton"]
+
+},
+
+{
+    "computer_name":"lenovo",
+    "color":"black",
+    "processor":"i5",
+    "internal_storage":"4gb",
+    "external_storage":"8gb"
+    
+},
+{
+    "music_type" :"Rock",
+    "singer_name":"Angie",
+    "album_released" :1973,
+    "awards":10
+
+}
+
+
+]
