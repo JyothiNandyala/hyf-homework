@@ -6,11 +6,11 @@ header{
     font-size: 30px;
     font-style: italic;
 }
-.inputtag{
+.input-tag{
     text-align: center;
    
 }
-#startbutton , #restartbutton{
+#start-button , #restart-button{
 
     text-align: center;
     }
