@@ -1,0 +1,92 @@
+body {
+    font-family: "Open Sans", sans-serif;
+    background-color: #F9FBFD;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body, h1, h2 {
+    margin: 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.logo{
+    position: absolute;
+    margin-bottom: 130px;
+   margin-left:10px;
+}
+header{
+    width:100%;
+    height:150px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top:20px;
+    margin-right:70px;
+    background-color:paleturquoise;
+    
+}
+h1 , #search{
+    margin-top:20px;
+    padding:30px;
+}
+#search{
+    width:350px;
+    height:25px;
+    padding-top:25px;
+    padding-bottom:40px;
+    margin-right:70px;
+    margin-top:50px;
+    margin-bottom:10px;
+    text-align: center;
+}
+#search:hover{
+    box-shadow: 2px solid rebeccapurple;
+}
+.search_items{
+    display:flex;
+    justify-content: space-between;
+    margin:40px 100px 40px 100px;
+    align-items: center;
+    
+    
+}
+#min-price , #maximim-price , #product-rating ,#button{
+    width:200px;
+    height:25px;
+}
+#ul {
+    display:grid;
+    grid-template-columns: 20% 20% 20% 20%;
+    justify-content: space-around;
+    /*margin-top:25px;*/
+    margin:5%;
+    
+}
+#ul li{
+    box-sizing: border-box;
+    border:1px solid black;
+    margin-bottom:20px;
+    padding:20px;
+}
+footer{
+    clear:both;
+background-color:paleturquoise;
+    color:black;
+    width:100%;
+    height:50%;
+}
+.footer-info{
+    display:flex;
+    justify-content: space-between;
+    margin-left:100px;
+    margin-bottom:20px;
+    margin-right:100px;
+    
+}
