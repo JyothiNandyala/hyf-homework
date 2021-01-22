@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="game.css" />
+    <title>fastest presser</title>
+</head>
+<body>
+    <header>
+        <h2>Fastest Presser</h2>
+    </header>
+
+    <div class="input-tag"><input type="number" id="number" name="game" placeholder="Set Seconds" min="0"><br><br></div>
+   
+    <div id="start-button"><button id="button">Start game!</button></div>
+    <div id="time">
+    <P id="count-down"></P>
+    <h2 id="timeupmessage"></h2>
+</div>
+    <hr>
+    <section>
+    <div class="scount">
+        <h1>Press S</h1>
+        <h4 id="count_s"></h4>
+    </div>
+    <canvas id="my-canvas"></canvas>
+    <canvas id="my-canvas1"></canvas>
+    <div>
+    <h1>Press L</h1>
+    <h4 id="count_l"></h4>
+</div>
+</section>
+<section>
+    <div id="winner_message">
+<h2 id="winner"></h2>
+<h2 id="error_message"></h2>
+</div>
+</section>
+<div id="restart-button"><button id="reset_game">Please Restart The Game</button></div>
+<script src="https://cdn.jsdelivr.net/npm/confetti-js@0.0.13/dist/index.min.js"></script>
+<script src="gamepresser.js"></script>
+
+</script> 
+</body>
+</html>
