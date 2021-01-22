@@ -11,6 +11,7 @@ function translateOneByOne() {
     p1.then(() => {
         console.log("redbox has been moved")
     })
+
     const p2 = new Promise(resolve => {
         setTimeout(() => {
             resolve(moveElement(blueBoxElement, { x: 400, y: 300 }))
@@ -29,18 +30,23 @@ function translateOneByOne() {
     })
 
 }
-
 translateOneByOne();
+
+function allCircles() {
+    moveElement(redBoxElement, { x: 20, y: 300 }),
+        moveElement(blueBoxElement, { x: 400, y: 300 }),
+        moveElement(greenBoxElement, { x: 400, y: 20 })
+}
 
 //Should translate all the circles at the same time from their random start position
 async function translateAllAtOnce() {
 
     try {
-        await Promise.all([moveElement(redBoxElement, { x: 20, y: 300 }), moveElement(blueBoxElement, { x: 400, y: 300 }), moveElement(greenBoxElement, { x: 400, y: 20 })])
+        await Promise.all([allCircles()])
         console.log("All the elements has been moved at a time")
     }
     catch (error) {
         console.log(error)
     }
 }
-translateAllAtOnce();
+//translateAllAtOnce();
