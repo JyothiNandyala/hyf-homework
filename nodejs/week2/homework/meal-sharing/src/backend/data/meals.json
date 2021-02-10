@@ -1,0 +1,36 @@
+[
+    {
+        "id" : 1,
+        "title" : "Indian food in the summer",
+        "maxNumberOfGuests" : 5,
+        "description" : "A nice night out eating delicious indian food",
+        "createdAt" : "2019/12/7 14:34",
+        "price" : 70
+    },
+    {
+        "id" : 2,
+        "title" : "SouthIndian Special Food",
+        "maxNumberOfGuests" : 5,
+        "description" : "Fish Curry with light spicy is delicious and also good for health",
+        "createdAt" : "2020/12/7 14:34",
+        "price" : 67
+    },
+
+    {
+        "id" : 3,
+        "title" : "Chicken Biriyani Indians Favourite Dish",
+        "maxNumberOfGuests" : 7,
+        "description" : "Chicken biriyani with one cola nice combination and it is also delicious food",
+        "createdAt" : "2021/02/01 10:34",
+        "price" : 200
+    },
+    {
+        "id" : 4,
+        "title" : "Pizza",
+        "maxNumberOfGuests" : 3,
+        "description" : "Mushroom Pizza with Extra Spicy",
+        "createdAt" : "2021/01/01 14:34",
+        "price" : 50
+    }
+
+]
