@@ -1,10 +1,7 @@
 const express = require("express");
 const app=express();
 const router = express.Router();
-
-const meals = require("./../data/meals.json");
 const reservations = require("./../data/reservations.json");
-const reviews = require("./../data/reviews.json");
 
 //Respond with the json for the reservation with the corresponding id 
 router.get("/:id", async (request, response) => {
