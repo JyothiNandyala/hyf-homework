@@ -19,7 +19,7 @@ const todos = [{
 ];
 function App() {
   return (
-    <div className="todo-App">
+    <div className="todo-app">
       <RenderedTodos todos={todos} />
     </div>
   );

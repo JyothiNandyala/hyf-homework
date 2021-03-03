@@ -8,13 +8,19 @@ const TodoItems = (props) => {
     )
 }
 
-const RenderedTodos = (props) => {
+const RenderedTodos = ({todos}) => {
     return (
         <ol>
             <h1 className="todo-header">Todo List</h1>
           
-                {props.todos.map(todo => {
-                return  <li> <TodoItems activity={todo.activity} duration={todo.duration} key={todo.id} />
+                {todos.map(todo => {
+                return  
+                <li> 
+                    <TodoItems 
+                    activity={todo.activity} 
+                    duration={todo.duration} 
+                    key={todo.id} 
+                    />
                  </li>
             })}
            
