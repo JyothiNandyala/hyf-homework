@@ -1,0 +1,28 @@
+.App {
+  text-align: center;
+  margin-left:380px;
+  margin-top:100px;
+  width:500px;
+  height:450px;
+  background-color: hotpink;
+  border:2px solid goldenrod;
+}
+
+li{
+  list-style: none;
+}
+.list-of-todos{
+  padding:10px;
+}
+.addtodo_button{
+  margin-top:50px;
+}
+button{
+  
+  background-color: greenyellow;
+}
+button:hover{
+  background-color: indigo;
+  width:90px;
+  height:30px;
+}
