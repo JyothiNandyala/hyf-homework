@@ -1,0 +1,75 @@
+body {
+  background-color: darkgrey;
+}
+h1 {
+  color: firebrick;
+}
+.App {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  padding: 10px;
+  margin: 50px;
+}
+
+button {
+  text-align: center;
+  width: 100px;
+  height: 30px;
+  font-size: large;
+  background-color: #64fdca;
+  margin-left: 20px;
+}
+button:hover {
+  background-color: chartreuse;
+  border: 2px solid blue;
+}
+.addbutton {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.no-items {
+  text-align: center;
+  align-items: center;
+  background-color: #64fdca;
+  margin-left: 45%;
+  width: 120px;
+  height: 30px;
+}
+
+.input-data {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 250px;
+  width: 50%;
+}
+label,
+input {
+  font-size: 18px;
+  flex-basis: 250px;
+}
+li {
+  padding: 10px;
+}
+.list-of-todos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 20px;
+  border-radius: 3px;
+
+  margin-bottom: 10px;
+  padding: 15px;
+}
+.item-span {
+  margin-left: 5px;
+  padding-left: 0;
+}
+.timer {
+  text-align: center;
+  margin-left: 35%;
+  background-color: #64fdca;
+  width: 400px;
+  height: 30px;
+}
