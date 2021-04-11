@@ -5,11 +5,9 @@ const TodoComponent = (props) => {
   return (
     <div
       style={{
-        backgroundColor: "yellow",
-        border: "2px solid black",
         width: "700px",
         marginLeft: "250px",
-        marginBottom: "20px",
+        marginBottom: "40px",
       }}
     >
       {props.children}
@@ -69,7 +67,7 @@ function TodoList({ id, description, deadline, removeTodo }) {
 function RenderTodos() {
   const [description, setDescription] = useState("");
   const [deadline, setDeadline] = useState("");
-  const [apidata, setApiData] = useState([]);
+  const [todos, setTodos] = useState([]);
 
   const minimumDate = () => {
     let today = new Date();
@@ -92,7 +90,7 @@ function RenderTodos() {
     fetch(API_URL)
       .then((response) => response.json())
       .then((data) => {
-        setApiData(data);
+        setTodos(data);
       });
   }, []);
 
@@ -101,21 +99,21 @@ function RenderTodos() {
     event.preventDefault();
     if (description !== "") {
       const newTodos = {
-        id: apidata.length + 1,
+        id: todos.length + 1,
         description: description,
         deadline: deadline,
       };
       setDescription("");
       setDeadline("");
-      setApiData([...apidata, newTodos]);
+      setTodos([...todos, newTodos]);
     }
   };
 
   //delete Todos
   function removeTodo(id) {
-    const nextTodos = apidata.filter((todo) => todo.id !== id);
+    const nextTodos = todos.filter((todo) => todo.id !== id);
     console.log(nextTodos);
-    setApiData(nextTodos);
+    setTodos(nextTodos);
   }
 
   return (
@@ -149,8 +147,8 @@ function RenderTodos() {
           AddTodo
         </button>
       </form>
-      {apidata.length ? (
-        apidata.map((todo) => (
+      {todos.length ? (
+        todos.map((todo) => (
           <TodoList
             key={todo.id}
             id={todo.id}

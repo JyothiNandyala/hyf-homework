@@ -12,7 +12,6 @@ function Timer() {
 
   return (
     <>
-      <h1>Todo List</h1>
       <div>
         <h2 className="timer">You Have Used {time} Seconds</h2>
       </div>
